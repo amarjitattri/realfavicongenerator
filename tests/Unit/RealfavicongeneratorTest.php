@@ -10,9 +10,9 @@ class RealfavicongeneratorTest extends TestCase
     /** @test */
     public function it_loads_a_image_file()
     {
-        $file = Realfavicongenerator::load(__DIR__ .'/stubs/php.png');
+        $file = Realfavicongenerator::load(__DIR__ .'/../stubs/php.png');
 
-        $expected = file_get_contents(__DIR__ .'/stubs/php.png');
+        $expected = file_get_contents(__DIR__ .'/../stubs/php.png');
         
         $this->assertEquals($expected, $file);
     }
